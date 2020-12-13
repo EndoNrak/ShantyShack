@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "shanty-shack"
+  "defaultProject": "shanty-shack",
+  "cli": {
+    "analytics": "ff485a80-999f-4965-ab8a-f2fb35a1b703"
+  }
 }

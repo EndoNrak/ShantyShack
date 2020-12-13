@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese");
+
+body {
+  color: #BDBDBD;
+  background-color: black;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+}

@@ -1,24 +1,28 @@
 .fixed_header {
   background-color: black;
-  width: 280px;
+  width: 25%;
+  max-width: 300px;
+  min-width: 180x;
   height: 100%;
-  position: fixed;
+  position: relative;
   z-index: 10;
 }
 
 .fixed_top_icon {
-  top: 40px;
-  left: 30px;
+  top: 5%;
+  left: 10%;
   /* right: 30px; */
   width: 80%;
+  min-width: 200px;
+  max-width: 300px;
   position: relative;
 }
 
 .main_cont {
-  margin-left: 180px;
+  margin-left: 25%;
+  width: 75%;
+  position: relative;
   /* background: #eee; */
-  width: -webkit-calc(100% - 180px);
-  width: calc(100% - 180px);
   overflow: hidden;
   display: block;
 }

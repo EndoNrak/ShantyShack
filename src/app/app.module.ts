@@ -8,6 +8,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { NewsComponent } from './news/news.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NewsComponent } from './news/news.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

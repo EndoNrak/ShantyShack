@@ -6,3 +6,6 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 15px;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

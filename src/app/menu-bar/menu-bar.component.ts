@@ -1,4 +1,4 @@
-import { Component, OnInit, NgZone } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 import {Menu} from './menu'
 
@@ -16,9 +16,9 @@ export class MenuBarComponent implements OnInit {
     {title_jpn: "自己紹介", title_eng: "INTRODUCTION", route: ""},
     {title_jpn: "アクセス", title_eng: "ACCESS", route: ""},
   ];
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  constructor(){}
+
+  ngOnInit(){}
 
 }

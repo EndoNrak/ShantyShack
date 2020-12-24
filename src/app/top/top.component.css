@@ -1,4 +1,23 @@
 .top-cover-section{
   width: 100%;
-  top: 100px;
+  /* top: 80px; */
+}
+
+img{
+  position: relative;
+
+}
+
+div.top-img{
+  overflow: hidden;
+  padding-top: 60%;
+}
+
+figure{
+  position: relative;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

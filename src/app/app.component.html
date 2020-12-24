@@ -1,12 +1,9 @@
-<header class="fixed_header">
-  <div class="fixed_top_icon">
-    <a routerLink="">
-      <img src='../assets/image/top_image2.png' alt="top-icon" width="100%">
-    </a>
-  </div>
-  <app-menu-bar></app-menu-bar>
-</header>
-<main class="main_cont">
-  <router-outlet></router-outlet>
-</main>
-
+<app-mobile-header *ngIf="sidenavMode === 'over'"></app-mobile-header>
+<mat-sidenav-container>
+  <mat-sidenav mode="{{sidenavMode}}" opened="{{sidenavOpened}}">
+    <app-menu-bar></app-menu-bar>
+  </mat-sidenav>
+  <mat-sidenav-content class="main_cont">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

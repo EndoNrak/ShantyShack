@@ -1,0 +1,31 @@
+header {
+  width: 100%;
+  position: fixed;
+  background-color: black;
+}
+
+img{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.top_icon {
+  display: inline-block;
+  position: relative;
+  margin-left: 35%;
+  width: 30%;
+}
+
+mat-icon {
+  font-size: 40px;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  position: fixed;
+  margin: 10px 20px 0 0;
+  right: 2px;
+  width: 30px;
+  z-index: 30;
+  font-size: 30px;
+}

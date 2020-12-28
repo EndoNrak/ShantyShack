@@ -8,7 +8,7 @@ import { Component, NgZone } from '@angular/core';
 
 export class AppComponent {
   title = 'shanty-shack';
-  sidenavOpened: boolean = true;
+  sidenavOpened: string = 'true';
   sidenavMode: string = 'side';
 
   constructor(private ngZone: NgZone) {
@@ -26,17 +26,17 @@ export class AppComponent {
   private handleResizeWindow(width: number) {
     if (700 < width) {
       // for wide screen
-      this.sidenavOpened = true;
+      this.sidenavOpened = 'true';
       this.sidenavMode = 'side';
     } else {
       // for mobile
-      this.sidenavOpened = false;
+      this.sidenavOpened = 'false';
       this.sidenavMode = 'over';
     }
   }
 
-  private openSidenavi(isopenSidenavi: boolean){
-    this.sidenavOpened = isopenSidenavi;
-    this.sidenavMode = 'over';
-  }
+  // private openSidenavi(isopenSidenavi: boolean){
+  //   this.sidenavOpened = isopenSidenavi;
+  //   this.sidenavMode = 'over';
+  // }
 }

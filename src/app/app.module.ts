@@ -13,7 +13,8 @@ import { MenuComponent } from './menu/menu.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { NewsComponent } from './news/news.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
+import {MobileOverMenuComponent} from './mobile-over-menu/mobile-over-menu.component';
+import { MobileHeaderComponent } from './mobile-header/mobile-header.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
     MenuComponent,
     MenuBarComponent,
     NewsComponent,
+    MobileOverMenuComponent,
     MobileHeaderComponent
   ],
   imports: [

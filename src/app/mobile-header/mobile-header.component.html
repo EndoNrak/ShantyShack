@@ -1,13 +1,10 @@
-<header>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <div>
-    <div class="top_icon">
-      <a routerLink="">
-        <img src='../../assets/image/top_image2.png' alt="top-icon">
-      </a>
-    </div>
-    <div class="hamburger-menu">
-      <mat-icon>menu</mat-icon>&nbsp;
-    </div>
+<div class="header">
+  <div class="top_icon">
+    <a routerLink="">
+      <img src='../../assets/image/top_image2.png' alt="top-icon">
+    </a>
   </div>
-</header>
+  <div class="hamburger-menu">
+    <mat-icon (click)="toggleMobileovermenu()">menu</mat-icon>&nbsp;
+  </div>
+</div>

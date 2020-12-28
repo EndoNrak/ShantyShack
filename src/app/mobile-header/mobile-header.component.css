@@ -1,7 +1,7 @@
-header {
-  width: 100%;
-  position: fixed;
-  background-color: black;
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: black;
 }
 
 img{

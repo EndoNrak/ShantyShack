@@ -1,7 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
-import {MatSidenav} from '@angular/material/sidenav';
-
-import {AppComponent} from '../app.component'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-header',
@@ -9,16 +6,19 @@ import {AppComponent} from '../app.component'
   styleUrls: ['./mobile-header.component.css']
 })
 export class MobileHeaderComponent implements OnInit {
-  @Input() sidenavMode: string = 'over';
-  // sidenavMode: string=AppComponent.sidenavMode
 
-  constructor() { }
+  constructor(
+    // public mobileOvermenu: MobileOverMenuComponent
+    ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    // console.log(this.mobileOvermenu.isopened);
   }
 
-  // toggleSidenav() {
-  //   this.sidenavi.toggle();
-  // }
+  toggleMobileovermenu(){
+    console.log('hamburger menu button pushed');
+    // this.mobileOvermenu.toggleMobileovermenu();
+
+  }
 
 }

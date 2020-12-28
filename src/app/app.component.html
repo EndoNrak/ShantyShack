@@ -1,6 +1,9 @@
-<app-mobile-header *ngIf="sidenavMode === 'over'"></app-mobile-header>
+<header>
+  <app-mobile-header *ngIf="sidenavOpened === 'false'"></app-mobile-header>
+</header>
+<app-mobile-over-menu *ngIf="sidenavOpened === 'false'"></app-mobile-over-menu>
 <mat-sidenav-container>
-  <mat-sidenav mode="{{sidenavMode}}" opened="{{sidenavOpened}}">
+  <mat-sidenav mode="side" opened="{{sidenavOpened}}">
     <app-menu-bar></app-menu-bar>
   </mat-sidenav>
   <mat-sidenav-content class="main_cont">

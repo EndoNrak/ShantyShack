@@ -18,6 +18,7 @@ img{
 
 mat-icon {
   font-size: 40px;
+  z-index: 50;
 }
 
 .hamburger-menu {

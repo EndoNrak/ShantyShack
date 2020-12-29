@@ -1,4 +1,5 @@
 import { Component, NgZone } from '@angular/core';
+import {NavigationService } from './navigation.service'
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,9 @@ import { Component, NgZone } from '@angular/core';
 
 export class AppComponent {
   title = 'shanty-shack';
-  sidenavOpened: string = 'true';
-  sidenavMode: string = 'side';
 
-  constructor(private ngZone: NgZone) {
+  constructor(private ngZone: NgZone,
+              public navigationService: NavigationService) {
     window.onresize = () => {
       ngZone.run(() => {
         this.handleResizeWindow(window.innerWidth);
@@ -26,17 +26,10 @@ export class AppComponent {
   private handleResizeWindow(width: number) {
     if (700 < width) {
       // for wide screen
-      this.sidenavOpened = 'true';
-      this.sidenavMode = 'side';
+      this.navigationService.setWidewindowmode();
     } else {
       // for mobile
-      this.sidenavOpened = 'false';
-      this.sidenavMode = 'over';
+      this.navigationService.setMobilemode();
     }
   }
-
-  // private openSidenavi(isopenSidenavi: boolean){
-  //   this.sidenavOpened = isopenSidenavi;
-  //   this.sidenavMode = 'over';
-  // }
 }

@@ -1,13 +1,3 @@
-.mobile-over-menu-unactive{
-  position: fixed;
-  opacity: 0;
-  height: 100%;
-  transition: 0.7s;
-  width: 100%;
-  background-color: black;
-  z-index: -1;
-}
-
 .mobile-over-menu-active{
   opacity: 1;
   z-index: 20;
@@ -17,8 +7,6 @@
   width: 100%;
   background-color: black;
 }
-
-
 
 .top_icon{
   margin: 7% auto;

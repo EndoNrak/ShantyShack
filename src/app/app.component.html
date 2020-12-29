@@ -1,10 +1,10 @@
 <header>
-  <app-mobile-header *ngIf="sidenavOpened === 'false'"></app-mobile-header>
+  <app-mobile-header *ngIf="navigationService.isMobileNavDisplayed"></app-mobile-header>
 </header>
-<app-mobile-over-menu *ngIf="sidenavOpened === 'false'"></app-mobile-over-menu>
+<app-mobile-over-menu *ngIf="navigationService.isMobileMenuOpened"></app-mobile-over-menu>
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened="{{sidenavOpened}}">
-    <app-menu-bar></app-menu-bar>
+  <mat-sidenav mode="side" opened="{{navigationService.isSideNavDisplayed}}">
+    <app-side-nav></app-side-nav>
   </mat-sidenav>
   <mat-sidenav-content class="main_cont">
     <router-outlet></router-outlet>

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+// import { } from
 
 
 @Component({
@@ -29,5 +30,7 @@ export class MobileOverMenuComponent implements OnInit {
     console.log("toggle mobileovermenu runned");
     // this.isopened = !this.isopened;
   }
+
+  // public
 
 }

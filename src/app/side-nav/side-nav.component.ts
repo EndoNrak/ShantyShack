@@ -1,13 +1,11 @@
-import { Component, OnInit} from '@angular/core';
-
-import {Menu} from './menu'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu-bar',
-  templateUrl: './menu-bar.component.html',
-  styleUrls: ['./menu-bar.component.css']
+  selector: 'app-side-nav',
+  templateUrl: './side-nav.component.html',
+  styleUrls: ['./side-nav.component.css']
 })
-export class MenuBarComponent implements OnInit {
+export class SideNavComponent implements OnInit {
   menues = [
     {title_jpn: "トップ", title_eng: "TOP", route: "top"},
     {title_jpn: "お知らせ", title_eng: "NEWS", route: "news"},
@@ -17,8 +15,9 @@ export class MenuBarComponent implements OnInit {
     {title_jpn: "アクセス", title_eng: "ACCESS", route: ""},
   ];
 
-  constructor(){}
+  constructor() { }
 
-  ngOnInit(){}
+  ngOnInit(): void {
+  }
 
 }

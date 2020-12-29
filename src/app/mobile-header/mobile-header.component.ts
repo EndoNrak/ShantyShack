@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '../navigation.service'
 
 @Component({
   selector: 'app-mobile-header',
@@ -8,17 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class MobileHeaderComponent implements OnInit {
 
   constructor(
-    // public mobileOvermenu: MobileOverMenuComponent
+    public navigationService: NavigationService
     ) { }
 
   ngOnInit(): void {
     // console.log(this.mobileOvermenu.isopened);
   }
 
-  toggleMobileovermenu(){
+  toggleMobilemenu(){
     console.log('hamburger menu button pushed');
-    // this.mobileOvermenu.toggleMobileovermenu();
-
+    this.navigationService.toggleMobilemenu();
   }
 
 }

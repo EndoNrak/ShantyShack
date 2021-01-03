@@ -27,6 +27,7 @@ app-mobile-hamburgermenu {
 
 mat-sidenav-container {
   background-color: black;
+  position: static;
 }
 
 mat-sidenav {

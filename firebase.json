@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "dist/public",
+    "public": "dist/shanty-shack",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }

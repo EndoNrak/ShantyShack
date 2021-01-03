@@ -16,17 +16,4 @@ img{
   width: 30%;
 }
 
-mat-icon {
-  font-size: 40px;
-  z-index: 50;
-}
 
-.hamburger-menu {
-  display: inline-block;
-  position: fixed;
-  margin: 10px 20px 0 0;
-  right: 2px;
-  width: 30px;
-  z-index: 30;
-  font-size: 30px;
-}

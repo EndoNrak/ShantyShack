@@ -1,5 +1,6 @@
 <header>
   <app-mobile-header *ngIf="navigationService.isMobileNavDisplayed"></app-mobile-header>
+  <app-mobile-hamburgermenu *ngIf="navigationService.isMobileNavDisplayed"></app-mobile-hamburgermenu>
 </header>
 <app-mobile-over-menu *ngIf="navigationService.isMobileMenuOpened"></app-mobile-over-menu>
 <mat-sidenav-container>

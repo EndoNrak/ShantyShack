@@ -14,7 +14,8 @@ import { NewsComponent } from './news/news.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MobileOverMenuComponent} from './mobile-over-menu/mobile-over-menu.component';
 import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
-import { SideNavComponent } from './side-nav/side-nav.component'
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamburgermenu.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SideNavComponent } from './side-nav/side-nav.component'
     NewsComponent,
     MobileOverMenuComponent,
     MobileHeaderComponent,
-    SideNavComponent
+    SideNavComponent,
+    MobileHamburgermenuComponent
   ],
   imports: [
     BrowserModule,

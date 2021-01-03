@@ -16,6 +16,15 @@ app-mobile-header {
   z-index: 10;
 }
 
+app-mobile-hamburgermenu {
+  display: inline-block;
+  position: fixed;
+  margin: 15px 25px 0 0;
+  right: 2px;
+  width: 30px;
+  z-index: 30;
+}
+
 mat-sidenav-container {
   background-color: black;
 }

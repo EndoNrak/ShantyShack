@@ -1,13 +1,13 @@
 <div class="mobile-over-menu-active">
   <div class="top_icon">
-    <a routerLink="">
+    <a routerLink="" (click)="closeMobileovermenu()">
       <img class="top_img" src='../../assets/image/top_image2.png' alt="top-icon">
     </a>
   </div>
   <nav>
     <li *ngFor="let menu of menues">
       <div class="menu">
-        <a routerLink='{{menu.route}}'>
+        <a routerLink='{{menu.route}}' (click)="closeMobileovermenu()">
           <span>
             {{menu.title_jpn}}<br>
             <small>{{menu.title_eng}}</small>

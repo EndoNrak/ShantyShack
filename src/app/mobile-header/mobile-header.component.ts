@@ -7,7 +7,7 @@ import { NavigationService } from '../navigation.service'
   styleUrls: ['./mobile-header.component.css']
 })
 export class MobileHeaderComponent implements OnInit {
-
+  MenuButtonStyle: string = "sp_menu_button";
   constructor(
     public navigationService: NavigationService
     ) { }
@@ -19,6 +19,7 @@ export class MobileHeaderComponent implements OnInit {
   toggleMobilemenu(){
     console.log('hamburger menu button pushed');
     this.navigationService.toggleMobilemenu();
+    this.MenuButtonStyle = this.navigationService.isMobileMenuOpened? "sp_menu_button": "sp_menu_button_opened";
   }
 
 }

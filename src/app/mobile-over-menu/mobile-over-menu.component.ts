@@ -1,5 +1,6 @@
+import { flatten } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
-// import { } from
+import { NavigationService } from '../navigation.service'
 
 
 @Component({
@@ -19,18 +20,13 @@ export class MobileOverMenuComponent implements OnInit {
     {title_jpn: "自己紹介", title_eng: "INTRODUCTION", route: ""},
     {title_jpn: "アクセス", title_eng: "ACCESS", route: ""},
   ];
-  constructor() {   }
+  constructor(
+    public navigationService: NavigationService
+  ) {   }
 
-  ngOnInit(): void {
-    // console.log("menu style: ");
-    // console.log(this.menustyle);
+  ngOnInit(): void {}
+
+  public closeMobileovermenu(){
+    this.navigationService.isMobileMenuOpened = false;
   }
-
-  public toggleMobileovermenu(){
-    console.log("toggle mobileovermenu runned");
-    // this.isopened = !this.isopened;
-  }
-
-  // public
-
 }

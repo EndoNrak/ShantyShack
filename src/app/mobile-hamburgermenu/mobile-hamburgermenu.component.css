@@ -1,0 +1,43 @@
+
+.sp_menu_button{
+  width: 40px;
+  /* height: 20px; */
+  margin: auto 0;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  display: inline-block;
+}
+
+.sp_menu_button .menu_icon01 {
+  float: left;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  display: block;
+}
+
+.sp_menu_button .menu_icon01 span{
+  margin-bottom: 5px;
+  display: block;
+  transition: all 0.4s ease-out;
+  width: 40px;
+  height: 5px;
+  background-color: #BDBDBD;
+}
+
+.sp_menu_button.open .menu_icon01 {
+  transform: rotate(-45deg);
+}
+
+.sp_menu_button.open .menu_icon01 .bar1{
+  transform: rotate(0deg) translateY(8px);
+}
+
+.sp_menu_button.open .menu_icon01 .bar2{
+  opacity: 0;
+}
+
+.sp_menu_button.open .menu_icon01 .bar1{
+  transform: rotate(-90deg) translateX(-20px);
+}

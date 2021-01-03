@@ -1,0 +1,28 @@
+<div class="header_inner">
+  <div class="top_icon">
+    <a routerLink="">
+      <img src='../../assets/image/top_image2.png' alt="top-icon" width="100%">
+    </a>
+  </div>
+  <nav>
+    <li *ngFor="let menu of menues">
+      <a routerLink='{{menu.route}}'>
+        <span>
+          {{menu.title_jpn}}<br>
+          <small>{{menu.title_eng}}</small>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="sns_link" href="https://www.instagram.com/shantyshack_whisky/">
+        <img src="../../assets/icon/instagram_icon.png" alt="insta-icon">
+      </a>
+      <a class="sns_link" href="https://www.facebook.com/shantyshack/">
+        <img src="../../assets/icon/facebook_icon.png" alt="facebook-icon">
+      </a>
+      <a class="sns_link" href="https://twitter.com/shantyshack">
+        <img src="../../assets/icon/twitter_icon.png" alt="twitter-icon">
+      </a>
+    </li>
+  </nav>
+</div>

@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+img{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.top_icon {
+  display: inline-block;
+  position: relative;
+  margin-left: 35%;
+  width: 30%;
+}
+
+

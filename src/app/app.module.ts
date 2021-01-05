@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +16,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MobileOverMenuComponent} from './mobile-over-menu/mobile-over-menu.component';
 import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamburgermenu.component'
+import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamburgermenu.component';
+import { AccessComponent } from './access/access.component';
+import { IntroductionComponent } from './introduction/introduction.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamb
     MobileOverMenuComponent,
     MobileHeaderComponent,
     SideNavComponent,
-    MobileHamburgermenuComponent
+    MobileHamburgermenuComponent,
+    AccessComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,8 @@ import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamb
     BrowserAnimationsModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

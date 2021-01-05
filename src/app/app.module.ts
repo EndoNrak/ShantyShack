@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { LayoutModule } from '@angular/cdk/layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +36,8 @@ import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamb
     BrowserAnimationsModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

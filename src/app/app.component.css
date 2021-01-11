@@ -6,7 +6,7 @@
   /* overflow: hidden; */
   display: block;
   z-index: 1;
-  margin: 50px 0 0;
+  margin-top: 50px;
 }
 app-mobile-header {
   display: block;

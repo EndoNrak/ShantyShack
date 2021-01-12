@@ -18,7 +18,8 @@ import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamburgermenu.component';
 import { AccessComponent } from './access/access.component';
-import { IntroductionComponent } from './introduction/introduction.component'
+import { IntroductionComponent } from './introduction/introduction.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { IntroductionComponent } from './introduction/introduction.component'
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    LayoutModule
+    LayoutModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

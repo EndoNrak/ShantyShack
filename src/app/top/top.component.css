@@ -9,7 +9,7 @@
 img{
   /* position: relative; */
   max-width: 150%;
-  height: auto;
+  height: 400px;
 
 }
 
@@ -34,13 +34,13 @@ figure.top-img{
   article{
     position: relative;
     overflow: hidden;
-    max-width: 1350px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
   div.top-img-div{
     /* overflow: hidden; */
-    /* text-align: center; */
+    text-align: center;
     /* left: 50%; */
     /* margin-left: -200px; */
 
@@ -48,8 +48,7 @@ figure.top-img{
   img{
     height: 90%;
     max-height: 700px;
-
-
+    max-width: 1000px;
   }
 
 }

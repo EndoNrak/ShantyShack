@@ -3,6 +3,15 @@
   /* height: 60%; */
   position: relative;
 }
+.top-news-section{
+  position: relative;
+  /* background-color: blanchedalmond; */
+  text-align: center;
+  margin-top: 30px;
+  /* margin-bottom: 15px; */
+  height: 200px;
+  color: #BDBDBD;
+}
 
 @media screen and (max-width: 700px){
 

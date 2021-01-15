@@ -19,7 +19,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamburgermenu.component';
 import { AccessComponent } from './access/access.component';
 import { IntroductionComponent } from './introduction/introduction.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TopNewsComponent } from './top-news/top-news.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
     SideNavComponent,
     MobileHamburgermenuComponent,
     AccessComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    TopNewsComponent
   ],
   imports: [
     BrowserModule,

@@ -2,10 +2,10 @@
     width: 100%;
     position: fixed;
     background-color: black;
+    padding: 10px 0;
 }
 
 img{
-  margin-top: 5px;
   width: 100%;
 }
 

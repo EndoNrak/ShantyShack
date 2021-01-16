@@ -1,4 +1,10 @@
 p {
   color: #BDBDBD;
   text-align: center;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.news-title{
+  margin-top: 50px;
 }

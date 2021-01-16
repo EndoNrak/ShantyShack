@@ -3,7 +3,7 @@
   z-index: 20;
   position: fixed;
   height: 100%;
-  transition: 0.7s;
+  /* transition: 0.7s; */
   width: 100%;
   background-color: black;
 }

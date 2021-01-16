@@ -27,16 +27,19 @@
         </ng-template>
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
-            <a routerLink="../news">
+            <a routerLink="../introduction">
               <img [src]="images[2]" alt="Random third slide">
             </a>
           </div>
           <div class="carousel-caption">
-            <h3>NEWS</h3>
-            <p>ShantyShackに関する最新情報</p>
+            <h3>INTRODUCTION</h3>
+            <p>バーテンダー紹介</p>
           </div>
         </ng-template>
       </ngb-carousel>
     </div>
   </article>
+</section>
+<section class="top-news-section">
+  <app-top-news></app-top-news>
 </section>

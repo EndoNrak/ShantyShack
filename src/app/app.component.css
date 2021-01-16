@@ -11,8 +11,10 @@
 app-mobile-header {
   display: block;
   position: fixed;
+  transition: top .5s ease-out;
   top: 0;
   height: 70px;
+  overflow: auto;
   /* min-height: 70px; */
   z-index: 10;
 }

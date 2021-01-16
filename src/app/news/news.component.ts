@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {NewsList} from '../mock-news'
+import {News} from '../news'
+import {NewsService} from '../news.service'
 
 @Component({
   selector: 'app-news',
@@ -7,10 +8,17 @@ import {NewsList} from '../mock-news'
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  newsList = NewsList;
-  constructor() { }
+  newsList!: News[];
+  constructor(private newsService: NewsService) { }
 
   ngOnInit(): void {
+    this.newsService.sortNewsList();
+    this.getNewsList();
+  }
+
+  getNewsList(){
+    this.newsService.getNewsList()
+    .subscribe(newsList => this.newsList = newsList);
   }
 
 }

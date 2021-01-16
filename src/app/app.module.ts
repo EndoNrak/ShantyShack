@@ -20,7 +20,8 @@ import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamb
 import { AccessComponent } from './access/access.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TopNewsComponent } from './top-news/top-news.component'
+import { TopNewsComponent } from './top-news/top-news.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TopNewsComponent } from './top-news/top-news.component'
     MobileHamburgermenuComponent,
     AccessComponent,
     IntroductionComponent,
-    TopNewsComponent
+    TopNewsComponent,
+    NewsDetailComponent
   ],
   imports: [
     BrowserModule,

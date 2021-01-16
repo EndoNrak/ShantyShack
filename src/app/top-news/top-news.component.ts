@@ -8,11 +8,16 @@ import {NewsService} from '../news.service'
   styleUrls: ['./top-news.component.css']
 })
 export class TopNewsComponent implements OnInit {
-  newsList!: News[];
-  constructor(private newsServie: NewsService) {
+  topNewsList!: News[];
+  constructor(private newsService: NewsService) {
   }
 
-  ngOnInit(): void {
-    this.newsList = this.newsServie.getTopNews()
+  ngOnInit(){
+    this.newsService.sortNewsList()
+    this.getTopNews()
+  }
+  getTopNews(): void {
+    this.newsService.getTopNews()
+        .subscribe(newsList => this.topNewsList = newsList);
   }
 }

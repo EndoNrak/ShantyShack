@@ -1,7 +1,7 @@
 <p>NEWS</p>
 <div class="news-list">
-    <div class="news-row" *ngFor='let news of newsList'>
-      <a routerLink="../news/{{news.id}}">
+    <div class="news-row" *ngFor='let news of topNewsList'>
+      <a routerLink="../news-detail/{{news.id}}">
         <div>
           <span class="date">{{news.date}}</span><br>
           <span class="title">{{news.title}}</span>

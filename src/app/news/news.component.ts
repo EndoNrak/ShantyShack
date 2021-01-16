@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NewsList} from '../mock-news'
 
 @Component({
   selector: 'app-news',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-
+  newsList = NewsList;
   constructor() { }
 
   ngOnInit(): void {

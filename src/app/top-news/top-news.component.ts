@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {NewsList} from '../mock-news'
+import {News} from '../news'
+import {NewsService} from '../news.service'
 
 @Component({
   selector: 'app-top-news',
@@ -7,10 +8,11 @@ import {NewsList} from '../mock-news'
   styleUrls: ['./top-news.component.css']
 })
 export class TopNewsComponent implements OnInit {
-  newsList = NewsList.slice(0, 3);
-  constructor() { }
-
-  ngOnInit(): void {
+  newsList!: News[];
+  constructor(private newsServie: NewsService) {
   }
 
+  ngOnInit(): void {
+    this.newsList = this.newsServie.getTopNews()
+  }
 }

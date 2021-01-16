@@ -13,6 +13,10 @@
   color: #BDBDBD;
 }
 
+h3 {
+  font-family: serif;
+}
+
 @media screen and (max-width: 700px){
 
 img{

@@ -1,3 +1,46 @@
-.news-title{
-  margin-top: 30px;
+p{
+  color: #BDBDBD;
 }
+a{
+  color: #BDBDBD;
+}
+section{
+  width: 80%;
+  margin: 0 auto;
+}
+
+img{
+  width:100%;
+}
+
+.news{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-family: serif;
+}
+
+.news-date{
+  font-size: 15px;
+}
+
+.news-title {
+  font-size: 20px;
+  margin: 10px auto;
+  text-align: left;
+  border-bottom: solid 1.5px  #969696;
+}
+
+.news-img{
+  margin: 20px auto;
+  /* box-shadow: 0 2px 4px #555; */
+}
+
+.news-sentence{
+  font-size: 17px;
+  line-height: 28px;
+}
+.link-news-list{
+  margin: 10px auto;
+}
+

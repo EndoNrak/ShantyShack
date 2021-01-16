@@ -1,3 +1,23 @@
-<div class="news-title">
-  <p>NEWS</p>
-</div>
+<section>
+  <div class="news">
+    <p>NEWS</p>
+  </div>
+  <div class="news-date">
+    <p>{{news!.date}}</p>
+  </div>
+  <div class="news-title">
+    <p>{{news!.title}}</p>
+  </div>
+  <div class="news-img">
+    <img src="{{news!.image}}" alt="news.image">
+  </div>
+  <div >
+    <p>{{news!.sentence}}</p>
+  </div>
+  <div class="link-news-list" align="right">
+    <a routerLink="../../news">
+      NEWS一覧へ　&rsaquo;&rsaquo;
+    </a>
+  </div>
+
+</section>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import {News} from '../news'
 
 import { NewsService } from '../news.service';
 
@@ -11,6 +12,9 @@ import { NewsService } from '../news.service';
 })
 export class NewsDetailComponent implements OnInit {
 
+  //"is not assignable to type Observable"への暫定的な処置
+  news: News | undefined;
+
   constructor(
     private route: ActivatedRoute,
     private newsService: NewsService,
@@ -18,6 +22,13 @@ export class NewsDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getNews()
+  }
+
+  getNews(): void {
+    const id = +this.route.snapshot.paramMap.get('id')!;
+    this.newsService.getNews(id)
+      .subscribe(news => this.news = news);
   }
 
 }

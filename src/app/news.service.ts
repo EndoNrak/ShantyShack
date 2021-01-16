@@ -8,6 +8,7 @@ import { Observable, of } from 'rxjs';
 })
 export class NewsService {
   newsList :News[] = NewsList;
+  news!: News;
   constructor() {}
 
   sortNewsList(): void{
@@ -19,15 +20,17 @@ export class NewsService {
       }
     });
   }
-  // getNewsList(): News[]{
-  //   return this.newsList
-  // }
+
   getNewsList(): Observable<News[]>{
     return of(NewsList)
   }
 
   getTopNews(): Observable<News[]>{
     return of(NewsList.slice(0, 3))
-    // return this.newsList.slice(0, 3);
+  }
+
+  //"is not assignable to type Observable"への暫定的な処置
+  getNews(id: number): Observable<News | undefined>{
+    return of(NewsList.find(news => news.id === id));
   }
 }

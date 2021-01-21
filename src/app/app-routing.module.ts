@@ -19,7 +19,6 @@ const routes: Routes = [
   { path: 'feature', component: FeatureComponent},
   { path: 'access', component: AccessComponent},
   { path: 'introduction', component: IntroductionComponent}
-
 ];
 
 @NgModule({

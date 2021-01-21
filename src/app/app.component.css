@@ -37,3 +37,12 @@ mat-sidenav {
   background-color: black;
   position: fixed;
 }
+
+app-footer {
+  background-color: black;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+}

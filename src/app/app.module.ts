@@ -21,7 +21,8 @@ import { MobileHamburgermenuComponent } from './mobile-hamburgermenu/mobile-hamb
 import { AccessComponent } from './access/access.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { TopNewsComponent } from './top-news/top-news.component';
-import { NewsDetailComponent } from './news-detail/news-detail.component'
+import { NewsDetailComponent } from './news-detail/news-detail.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { NewsDetailComponent } from './news-detail/news-detail.component'
     AccessComponent,
     IntroductionComponent,
     TopNewsComponent,
-    NewsDetailComponent
+    NewsDetailComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

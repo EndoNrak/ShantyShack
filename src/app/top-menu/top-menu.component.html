@@ -1,0 +1,22 @@
+<p>MENU</p>
+<!-- <ul>
+  <li *ngFor="let menutop of menues">
+    <a routerLink="{{menutop.route}}">
+      <div>
+        <img src="{{menutop.img}}">
+        <h1>{{menutop.title}}</h1>
+      </div>
+    </a>
+  </li>
+</ul> -->
+<ngb-carousel *ngIf="menues">
+  <ng-template ngbSlide *ngFor="let topmenu of menues">
+    <a routerLink="topmenu.route">
+      <div class="picsum-img-wrapper">
+        <img [src]="topmenu.img" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{topmenu.title}}</h3>
+      </div>
+    </a>
+  <ng-template>

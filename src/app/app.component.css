@@ -1,0 +1,48 @@
+.main_cont {
+  /* margin-left: 25%; */
+  width: 100%;
+  position: relative;
+  /* background: #eee; */
+  /* overflow: hidden; */
+  display: block;
+  z-index: 1;
+  margin-top: 50px;
+}
+app-mobile-header {
+  display: block;
+  position: fixed;
+  transition: top .5s ease-out;
+  top: 0;
+  height: 70px;
+  overflow: auto;
+  /* min-height: 70px; */
+  z-index: 10;
+}
+
+app-mobile-hamburgermenu {
+  display: inline-block;
+  position: fixed;
+  margin: 15px 25px 0 0;
+  right: 2px;
+  width: 30px;
+  z-index: 30;
+}
+
+mat-sidenav-container {
+  background-color: black;
+  position: static;
+}
+
+mat-sidenav {
+  background-color: black;
+  position: fixed;
+}
+
+app-footer {
+  background-color: black;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+}

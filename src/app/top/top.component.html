@@ -1,0 +1,48 @@
+<section class="top-cover-section">
+  <article>
+    <div class="top-img-div">
+        <!-- <img src="../../assets/image/shantyshack-exterior.png"> -->
+      <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a routerLink="../feature">
+              <img [src]="images[0]" alt="Random first slide">
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>FEATURE</h3>
+            <p>ウイスキーへのこだわり</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a routerLink="../menu">
+              <img [src]="images[1]" alt="Random second slide">
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>MENU</h3>
+            <p>ShantyShackで楽しめるウイスキーたち</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <a routerLink="../introduction">
+              <img [src]="images[2]" alt="Random third slide">
+            </a>
+          </div>
+          <div class="carousel-caption">
+            <h3>INTRODUCTION</h3>
+            <p>バーテンダー紹介</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </article>
+</section>
+<section class="toppage-sections">
+  <app-top-news></app-top-news>
+</section>
+<section class="toppage-sections">
+  <app-top-menu></app-top-menu>
+</section>

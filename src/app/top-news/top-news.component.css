@@ -1,0 +1,36 @@
+p {
+  font-size: 20px;
+  font-family: serif;
+}
+a{
+  width: 100%;
+  text-decoration: none;
+  color: #BDBDBD;
+}
+.news-list {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.news-row {
+  padding: 5px 0;
+  /* border-top: rgb(180, 178, 178);
+   */
+  /* border-top: solid 1.5px #3f3f3f; */
+  border-bottom:solid 1.5px #222222;
+  border-width: 2px;
+  text-align: left;
+}
+
+.link-news-list{
+  margin: 10px auto;
+}
+
+.date{
+  font-size: 11px;
+}
+
+.title {
+  font-size: 13px;
+  margin-top: 5px;
+}

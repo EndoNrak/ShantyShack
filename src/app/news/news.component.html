@@ -1,0 +1,23 @@
+<div class="news-title">
+  <p>NEWS</p>
+</div>
+<div class="news-list">
+  <div class="news-row" *ngFor='let news of newsList'>
+    <a routerLink="../news-detail/{{news.id}}">
+      <div class="image">
+        <img src={{news.image}}>
+      </div>
+      <div class="abstract">
+        <div class="date">
+          <span >{{news.date}}</span>
+        </div>
+        <div class="title">
+          <span>{{news.title}}</span>
+        </div>
+      </div>
+
+    </a>
+</div>
+<!-- <div class="pager">
+
+</div> -->

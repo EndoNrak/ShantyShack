@@ -22,7 +22,8 @@ import { AccessComponent } from './access/access.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { TopNewsComponent } from './top-news/top-news.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { TopMenuComponent } from './top-menu/top-menu.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { FooterComponent } from './footer/footer.component'
     IntroductionComponent,
     TopNewsComponent,
     NewsDetailComponent,
-    FooterComponent
+    FooterComponent,
+    TopMenuComponent
   ],
   imports: [
     BrowserModule,

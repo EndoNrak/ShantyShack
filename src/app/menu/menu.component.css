@@ -8,3 +8,8 @@ p {
 .menu-title{
   margin-top: 50px;
 }
+
+a.navlink{
+  color: #747474;
+  font-size: 15px;
+}

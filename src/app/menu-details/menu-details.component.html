@@ -1,12 +1,13 @@
 <div class="menu-lists">
-  <mat-card class="menu-detail-card" *ngFor="let menu of menu_details">
+  <mat-card class="menu-detail-card" *ngFor="let menu of menu_details; let i=index">
     <mat-card-header>
       <mat-card-title>{{menu.name}}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image src="{{menu.image}}" alt="{{menu.name}}">
-    <!-- <mat-card-content>
+    <div class="menu-description" [class.opened]="isOpenedMenuDescriptions[i]" (click)="toggleMenuDescription(i)">
       <p>{{menu.sentence}}</p>
-    </mat-card-content> -->
+    </div>
+    <img mat-card-image (click)="toggleMenuDescription(i)" src="{{menu.image}}" alt="{{menu.name}}">
+
     <mat-card-actions>
     </mat-card-actions>
   </mat-card>

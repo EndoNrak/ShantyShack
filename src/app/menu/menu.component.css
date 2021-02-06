@@ -5,6 +5,22 @@ p {
   font-family: serif;
 }
 
-.news-title{
+img {
+  height: 200px;
+  width: auto;
+}
+
+.menu-title{
   margin-top: 50px;
+}
+
+.menu-detail{
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+}
+
+a.navlink{
+  color: #747474;
+  font-size: 15px;
 }

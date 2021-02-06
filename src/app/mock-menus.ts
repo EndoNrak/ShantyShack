@@ -1,0 +1,27 @@
+import { Menu } from './menu';
+
+export const MenuList: Menu[] = [
+  { id: 10, name: "白州",　cat1: "whiskey", cat2: "Japanese", cat3: "single-malt" , image: "../../assets/image/whiskey/jpn/hakushu.png", sentence: "サントリー公式「森の若葉のようにみずみずしくフレッシュな香り、爽やかで軽快なキレのよい味わい。」だそうです。"},
+  { id: 11, name: "山崎",　cat1: "whiskey", cat2: "Japanese", cat3: "single-malt" , image: "../../assets/image/whiskey/jpn/yamazaki.jpg", sentence: "サントリー公式「やわらかく華やかな香り、甘くなめらかな味わい。」だそうです"},
+  { id: 12, name: "宮城峡",　cat1: "whiskey", cat2: "Japanese", cat3: "single-malt" , image: "../../assets/image/whiskey/jpn/miyagikyou.jpg", sentence: "宮城峡ってどこ？宮城？？"},
+  { id: 13, name: "West Cork 10y",　cat1: "whiskey", cat2: "Irish", cat3: "" , image: "../../assets/image/whiskey/irish/westcork10.jpg", sentence: "初めて買ったアイリッシュウイスキー。これがアイリッシュの特徴？？もっといろいろ試してみなければ"},
+  { id: 14, name: "Makers Mark",　cat1: "whiskey", cat2: "Bourbon", cat3: "" , image: "../../assets/image/whiskey/bourbon/makersmark.jpg", sentence: "一つ一つ手作業で封蝋していることで有名。原料に小麦を使っているので他のバーボンよりも柔らかい口当たりが特徴。という話をシャンティで聞いたことを覚えてます。"},
+  { id: 15, name: "Old Crow",　cat1: "whiskey", cat2: "Bourbon", cat3: "" , image: "../../assets/image/whiskey/bourbon/oldcrow.jpg", sentence: "このウイスキーでカラスの英語がcrowであることを覚えた"},
+  { id: 16, name: "Woodford Reserve",　cat1: "whiskey", cat2: "Bourbon", cat3: "" , image: "../../assets/image/whiskey/bourbon/woodford_reserve.jpg", sentence: "バーボンの本場、ケンタッキー州で最古の蒸留所。滑らかさが特徴。"},
+  { id: 17, name: "Wild Turkey 8y",　cat1: "whiskey", cat2: "Bourbon", cat3: "" , image: "../../assets/image/whiskey/bourbon/wildturkey_8y.jpg", sentence: "最初に買ったバーボンで力強く男くささが特徴。これとスコッチを飲み比べてバーボンの味を覚えた。"},
+  { id: 18, name: "Ardmore Legacy",　cat1: "whiskey", cat2: "Scotch", cat3: "single-malt" , image: "../../assets/image/whiskey/scotch/ardmore_legacy.jpg", sentence: "ハイランドの蒸留所。さわやかでスモーキー。"},
+  { id: 19, name: "Ballantines 12y",　cat1: "whiskey", cat2: "Scotch", cat3: "blended" , image: "../../assets/image/whiskey/scotch/ballantines_12.png", sentence: "確か自分で買った最初のウイスキー。ウイスキーのスモーキーとはを学んだ。"},
+  { id: 20, name: "Ballantines finest",　cat1: "whiskey", cat2: "Scotch", cat3: "blended" , image: "../../assets/image/whiskey/scotch/ballantines_finest.png", sentence: "安い。家で気軽にスコッチ系のハイボールを作って飲むならこれがいいなと思う。"},
+  { id: 21, name: "Chivas Regal 12y",　cat1: "whiskey", cat2: "Scotch", cat3: "blended" , image: "../../assets/image/whiskey/scotch/chivas_regal12.png", sentence: "何かが狂って一晩でボトルの半分以上を飲んだ。記憶は定かではない。味は覚えてない。。。また買います。"},
+  { id: 22, name: "Glenfarclas 105",　cat1: "whiskey", cat2: "Scotch", cat3: "single-malt" , image: "../../assets/image/whiskey/scotch/glenfarclas105.jpg", sentence: "百貨店で売り子の人が売っていたので買ったグレンファークラス。実際買ったのは原酒（アルコール60度くらいだった）のやつ。"},
+  { id: 23, name: "Glenfiddich 12y",　cat1: "whiskey", cat2: "Scotch", cat3: "single-malt" , image: "../../assets/image/whiskey/scotch/glenfiddich_12.jpg", sentence: "甘い香りが特徴のグレンフィディック。"},
+  { id: 24, name: "Glengoyne",　cat1: "whiskey", cat2: "Scotch", cat3: "single-malt" , image: "../../assets/image/whiskey/scotch/glengoyne.jpg", sentence: "どっしりシェリーなやつを買いたいと思って色々調べた結果にかったグレンゴイン。シェリーとはこのことかと学んだ。"},
+  { id: 25, name: "Laphroaig select",　cat1: "whiskey", cat2: "Scotch", cat3: "single-malt" , image: "../../assets/image/whiskey/scotch/laphroaig_select.jpg", sentence: "アイラの中でもピート香が最高級に強い。最初飲んだ時は正露丸を連想した。正露丸自体は飲んだことないのになぜか正露丸を連想した。"},
+  { id: 26, name: "Bass ペールエール",　cat1: "others", cat2: "Beer", cat3: "" , image: "../../assets/image/others/bass_pale_ale.jpg", sentence: "ビールもあります"},
+  { id: 27, name: "プレミアムモルツ",　cat1: "others", cat2: "Beer", cat3: "" , image: "../../assets/image/others/premium_malts.jpg", sentence: "一番好きなビール。結局プレモル"},
+  { id: 28, name: "季節のノンアルコールカクテル",　cat1: "non-alcohol", cat2: "Non-alcohol-cocktail", cat3: "" , image: "../../assets/image/whiskey/scotch/laphroaig_select.jpg", sentence: "白州の"},
+  { id: 29, name: "魔法の水",　cat1: "non-alcohol", cat2: "Non-alcohol-cocktail", cat3: "" , image: "../../assets/image/whiskey/scotch/laphroaig_select.jpg", sentence: "白州の"},
+  { id: 30, name: "ナッツ",　cat1: "food", cat2: "snack", cat3: "" , image: "../../assets/image/food/mix_nuts.jpg", sentence: "ウイスキーとの相性抜群"},
+  { id: 31, name: "まさかのカレー",　cat1: "food", cat2: "curry", cat3: "" , image: "../../assets/image/food/curry_and_rice.png", sentence: "みんな大好きカレーライス！ウイスキーとの愛称は絶望的！"},
+  { id: 32, name: "シェリー on バニラ",　cat1: "food", cat2: "desert", cat3: "" , image: "../../assets/image/food/icecreem_sherry.jpg", sentence: "バニラアイスにペドロヒメネスを使ったシェリーをかけたデザート。100円のアイスが800円のデザートに！"},
+];

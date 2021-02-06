@@ -1,0 +1,47 @@
+img{
+  height: 170px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+mat-card-title{
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.menu-description{
+  position: absolute;
+  text-align: left;
+  top: 0;
+  height: 70%;
+  width: 80%;
+  background-color: black;
+  z-index: -10;
+  opacity: 0;
+  margin: 40% auto 0;
+  transition: 0.7s;
+  transition-timing-function: ease-in-out;
+  font-size: 14px;
+}
+.menu-description.opened{
+  z-index: 20;
+  opacity: 0.9;
+}
+
+
+.menu-lists{
+  display: flex;
+  flex-wrap:wrap
+}
+
+mat-card{
+  width: 46%;
+  background-color: black;
+  color: #BDBDBD;
+  border-radius: 10px;
+  border-color: rgb(53, 53, 53);
+  border: solid;
+  margin: 2%;
+  text-align: center;
+}

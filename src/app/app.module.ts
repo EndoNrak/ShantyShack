@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card'
 import { LayoutModule } from '@angular/cdk/layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -23,7 +24,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { TopNewsComponent } from './top-news/top-news.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { FooterComponent } from './footer/footer.component';
-import { TopMenuComponent } from './top-menu/top-menu.component'
+import { TopMenuComponent } from './top-menu/top-menu.component';
+import { MenuDetailsComponent } from './menu-details/menu-details.component'
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { TopMenuComponent } from './top-menu/top-menu.component'
     TopNewsComponent,
     NewsDetailComponent,
     FooterComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    MenuDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component'
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
+    MatCardModule,
     LayoutModule,
     NgbModule
   ],

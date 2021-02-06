@@ -31,3 +31,7 @@ ngb-carousel {
   width: 70%;
   margin: 0 auto;
 }
+
+.caption{
+  top: 0px;
+}

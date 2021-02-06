@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopMenuComponent implements OnInit {
   menues = [
-    {title: "whiskey", img: "../../assets/image/sec1-pt.png", route: "menu/whiskey"},
-    {title: "others", img: "../../assets/image/sec1-pt.png", route: "menu/others"}
+    {title: "whiskey", img: "../../assets/image/sec1-pt.png", route: "menu"},
+    {title: "others", img: "../../assets/image/sec1-pt.png", route: "menu"},
+    {title: "non-alcohol", img: "../../assets/image/sec1-pt.png", route: "menu"},
+    {title: "food", img: "../../assets/image/sec1-pt.png", route: "menu"},
   ];
   constructor() { }
 

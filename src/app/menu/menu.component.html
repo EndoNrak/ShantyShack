@@ -1,21 +1,29 @@
 <div class="menu-title">
   <p>MENU</p>
 </div>
+<section>
+  <nav ngbNav #nav1="ngbNav" [(activeId)]="active_large_category_id" class="nav-tabs">
+    <ng-container ngbNavItem *ngFor="let large_cat of large_categories; let i1 = index">
+      <li [ngbNavItem]=i1>
+        <a ngbNavLink class="navlink" (click)="getMiddleCategories(large_cat.id)">{{large_cat.large_category}}</a>
+      </li>
+    </ng-container>
+  </nav>
+  <nav ngbNav #nav2="ngbNav" [(activeId)]="active_middle_category_id" class="nav-tabs" *ngIf="middle_categories.length>0">
+    <ng-container ngbNavItem *ngFor="let middle_cat of middle_categories; let i2 = index">
+      <li [ngbNavItem]=i2>
+        <a ngbNavLink class="navlink">{{middle_cat}}</a>
+      </li>
+    </ng-container>
+  </nav>
+</section>
+<section class="menu-detail">
+  <!-- <p>{{active_large_category_id}}</p>
+  <p>{{active_middle_category_id}}</p> -->
+  <app-menu-details [active_large_category_id]="active_large_category_id" [active_middle_category_id]="active_middle_category_id"></app-menu-details>
+</section>
 
-<nav ngbNav #nav="ngbNav"  class="nav-tabs">
-  <ng-container ngbNavItem *ngFor="let large_cat of large_categories">
-    <a ngbNavLink class="navlink" (click)="getMiddleCategories(large_cat.id)">{{large_cat.large_category}}</a>
-    <ng-template ngbNavContent>
-      <p>{{large_cat.description}}</p>
-    </ng-template>
-  </ng-container>
-</nav>
-<nav ngbNav #nav2="ngbNav" class="nav-tabs" *ngIf="middle_categories.length>0">
-  <ng-container ngbNavItem *ngFor="let middle_cat of middle_categories">
-    <a ngbNavLink class="navlink">{{middle_cat}}</a>
-    <ng-template ngbNavContent>
-    </ng-template>
-  </ng-container>
-</nav>
 
-<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+
+<div [ngbNavOutlet]="nav1" class="mt-2"></div>

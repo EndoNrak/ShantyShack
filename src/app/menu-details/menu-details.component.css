@@ -1,0 +1,29 @@
+img{
+  height: 170px;
+  width: auto;
+  margin: 0 auto;
+}
+
+mat-card-title{
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+mat-card-content{
+  margin: 10px 0;
+}
+
+.menu-lists{
+  display: flex;
+  flex-wrap:wrap
+}
+mat-card{
+  width: 46%;
+  background-color: black;
+  color: #BDBDBD;
+  border-radius: 10px;
+  border-color: rgb(53, 53, 53);
+  border: solid;
+  margin: 2%;
+  text-align: center;
+}

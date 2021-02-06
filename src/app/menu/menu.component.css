@@ -5,8 +5,19 @@ p {
   font-family: serif;
 }
 
+img {
+  height: 200px;
+  width: auto;
+}
+
 .menu-title{
   margin-top: 50px;
+}
+
+.menu-detail{
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
 }
 
 a.navlink{

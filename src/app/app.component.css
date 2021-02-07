@@ -44,5 +44,5 @@ app-footer {
   padding-bottom: 30px;
   height: 50px;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
 }

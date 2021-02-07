@@ -7,5 +7,5 @@ export const NewsList: News[] = [
   { id: 13, date: '2021/01/09', title: 'ホームページファーストリリース', sentence: 'ホームページをファーストリリースしました！これから徐々に発展させていくので、お楽しみに。画像はfigmaで作成したデザイン案です。', image: "../../assets/image/first-release.jpg"},
   { id: 14, date: '2021/01/14', title: 'トップページカルーセルリリース', sentence: 'トップページの一番上、カバー部分にカルーセルで三つの画像をスライドショーする部分を追加しました。また、それぞれFEATURE, MENU, INTRODUCTIONへのリンクになっています！', image: "../../assets/image/top-carousel.jpg"},
   { id: 15, date: '2021/01/16', title: 'NEWS一覧ページリリース', sentence: '過去のニュースをアーカイブするNEWS一覧ページをリリース', image: "../../assets/image/news-list.jpg"},
-  { id: 16, date: '2021/02/07', title: 'MENUページリリース', sentence: 'メニューを紹介するメニューページをリリース。それぞれの画像をタップすると説明文が現れます。掲載しているウイスキーは作者が実際に買ったことのあるウイスキーで、それに関する個人的なコメントを載せています。右上のメニューボタン→メニューで更新したメニューページをチェックしてください！', image: "../../assets/image/menu-detail-page.jpg"},
+  { id: 16, date: '2021/02/07', title: 'MENUページリリース', sentence: 'メニューを紹介するメニューページをリリース。それぞれの画像をタップすると説明文が現れます。掲載しているウイスキーは作者が実際に買ったことのあるウイスキーで、それに関する個人的なコメントを載せています。右上のメニューボタン→メニューで更新したメニューページをチェックしてください！擬t', image: "../../assets/image/menu-detail-page.jpg"},
 ];

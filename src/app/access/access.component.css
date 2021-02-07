@@ -1,4 +1,22 @@
 p {
   color: #BDBDBD;
   text-align: center;
+  font-family: serif;
+}
+
+section{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.access-title{
+  margin-top: 50px;
+  color: #BDBDBD;
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.embedded-map{
+  margin: 20px auto;
 }

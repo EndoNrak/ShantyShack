@@ -15,6 +15,12 @@ h3 {
   font-family: serif;
 }
 
+.information{
+  margin-top: 20px;
+  color: #BDBDBD;
+  text-align: center;
+}
+
 @media screen and (max-width: 700px){
 
 img{

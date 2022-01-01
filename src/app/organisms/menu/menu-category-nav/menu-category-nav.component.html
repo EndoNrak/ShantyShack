@@ -1,0 +1,14 @@
+<nav ngbNav #nav1="ngbNav" [(activeId)]="active_large_category_id" class="nav-tabs">
+  <ng-container ngbNavItem *ngFor="let large_cat of large_categories; let i1 = index">
+    <li [ngbNavItem]=i1>
+      <a ngbNavLink class="navlink" (click)="onClickLargeCatNav()">{{large_cat.large_category}}</a>
+    </li>
+  </ng-container>
+</nav>
+<nav ngbNav #nav2="ngbNav" [(activeId)]="active_middle_category_id" class="nav-tabs" *ngIf="middle_categories.length>0">
+  <ng-container ngbNavItem *ngFor="let middle_cat of middle_categories; let i2 = index">
+    <li [ngbNavItem]=i2>
+      <a ngbNavLink class="navlink" (click)="onClickMiddleCatNav()">{{middle_cat}}</a>
+    </li>
+  </ng-container>
+</nav>

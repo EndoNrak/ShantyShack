@@ -1,0 +1,12 @@
+<p>MENU</p>
+<ngb-carousel *ngIf="menues">
+  <ng-template ngbSlide *ngFor="let topmenu of menues">
+    <a routerLink="topmenu.route">
+      <div class="picsum-img-wrapper">
+        <img [src]="topmenu.img" alt="Random first slide">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{topmenu.title}}</h3>
+      </div>
+    </a>
+  <ng-template>

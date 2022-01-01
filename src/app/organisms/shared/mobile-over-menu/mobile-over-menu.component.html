@@ -1,0 +1,36 @@
+<div class="mobile-over-menu-active">
+  <div class="top_icon">
+    <a routerLink="" (click)="closeMobileovermenu()">
+      <img class="top_img" src='../../assets/image/top_image2.png' alt="top-icon">
+    </a>
+  </div>
+  <nav>
+    <li *ngFor="let menu of menues">
+      <div class="menu">
+        <a routerLink='{{menu.route}}' (click)="closeMobileovermenu()">
+          <span>
+            {{menu.title_jpn}}<br>
+            <small>{{menu.title_eng}}</small>
+          </span>
+        </a>
+      </div>
+    </li>
+    <li class="menu">
+        <div class="sns_link">
+          <a  href="https://www.instagram.com/shantyshack_whisky/">
+            <img class="sns_link_img" src="../../assets/icon/iconmonstr-instagram-11.svg" alt="insta-icon">
+          </a>
+        </div>
+        <div class="sns_link">
+          <a href="https://www.facebook.com/shantyshack/">
+            <img class="sns_link_img" src="../../assets/icon/iconmonstr-facebook-6.svg" alt="facebook-icon">
+          </a>
+        </div>
+        <div class="sns_link">
+          <a href="https://twitter.com/shantyshack">
+            <img class="sns_link_img" src="../../assets/icon/Twitter_Logo_WhiteOnImage.svg" alt="twitter-icon">
+          </a>
+        </div>
+    </li>
+  </nav>
+</div>
